@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-size: auto;
+}
+.bg-container{
+    width: 1920px;
+    height: 1080px;
+    border: 1px solid green;
+    
+}
+.btn-box{
+    width:1400px;
+    height: 100px;
+    margin: 960px auto 0px;
+   /* border: 1px solid red; */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.btn-item{
+    background:url(../img/stone.png) no-repeat;
+    width: 200px;
+    height: 100px;
+    
+}
+.btn-item p{
+	display: block;
+	height: 30px;
+	width: 126px;
+	line-height: 35px;
+	margin: 25px auto 0px;
+	font-size: 18px;
+	color: #767676;
+}
+.btn-item span{
+	display: block;
+	height: 20px;
+	width: 155px;
+	text-align: center;
+	line-height: 15px;
+	margin: 0px auto;
+	font-size: 12px;
+	letter-spacing:-1px;
+	color: #B9B9B9;
+	margin-left: 1px;
+}
