@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/screen.css" type="text/css">
+		<script type="text/javascript" src="../js/river.js" ></script>
+	</head>
+	<style>
+		body{
+		    background: url(../img/内容发布-餐饮信息新建.jpg) no-repeat;    
+		}
+		.admin-btn li{
+			float: left;
+			margin-top: 123px;
+			
+		}
+		select{
+			float: left;
+			margin-left: 120px;
+			height: 30px;
+			width: 150px;
+		}
+		.new{
+			display: block;
+			margin-left: 30px;
+			height: 30px;
+			width: 120px;
+			 
+		
+		}
+		ul{
+			float: left;
+		}
+		li{
+			list-style: none;
+		}
+		.leftBtn{
+			
+			display: block;
+			width: 210px;
+			height: 40px;
+			 
+		
+		}
+		.bianji{
+			position: absolute;
+			left: 1240px;
+			top: 220px;
+			width: 30px;
+			height: 20px;
+			display: block;
+			 
+		}
+		
+	</style>
+	<body>
+		<div class="bg-container">
+			<ul>
+				<li>
+					<a class="leftBtn" href="数据分析-浏览行为统计main.html" style="margin-top: 100px;"></a>
+				</li>
+				<li>
+					<a class="leftBtn" href="内容管理-日志发布.html" style="height: 50px;"></a>
+				</li>
+				<li>
+					<a class="leftBtn" href="内容管理-日志发布.html"></a>
+				</li>
+				<li>
+					<a class="leftBtn" href="内容管理-内容发布管理旅客.html"></a>
+				</li>
+				<li>
+					<a class="leftBtn" href="账号权限-角色.html"></a>
+				</li>
+			</ul>
+			
+			
+		
+				<ul class="admin-btn">
+					<li>
+						<select>
+							<option value="1">旅客服务</option>
+							<option value="2" selected="selected">餐饮</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+						</select>
+					</li>
+					<li>
+						<a class="new" href="内容管理-内容发布管理新建-餐饮弹出框.html"></a>
+					</li>
+					<li>
+						<a class="new" href="内容管理-内容发布管理新建-餐饮轮播弹出框.html"></a>
+					</li>
+					
+				</ul>
+				<a class="bianji" href="内容管理-内容发布管理新建-餐饮弹出框.html"></a>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js" ></script>
+	<script>
+		$("select").change(function(){
+		    var seValue=$(this).val();
+		    if(seValue==1){
+		        window.location.href="内容管理-内容发布管理旅客.html";
+		    }else if(seValue==2){
+		        window.location.href="内容管理-内容发布管理餐饮.html";
+		    }
+		});
+		
+	</script>
+</html>
